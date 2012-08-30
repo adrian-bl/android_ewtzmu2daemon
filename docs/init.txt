@@ -1,0 +1,22 @@
+open("/dev/ewtzmu2", O_RDWR)            = 7
+ioctl(7, 0x80048316, 0xbea5b808)        = 0 // EW_IOCTL_GET_DIRPOLARITY
+close(7)                                = 0
+
+open("/dev/ewtzmu2daemon", O_RDWR)      = 7
+ioctl(7, 0x8004840b, 0xbea5baac)        = 0 // EWDAE_IOCTL_GET_CONTROL
+ioctl(7, 0x4004840a, 0xbea5baac)        = 0 // EWDAE_IOCTL_SET_CONTROL
+ioctl(7, 0x8004840b, 0xbea5bad4)        = 0 // EWDAE_IOCTL_GET_CONTROL
+
+ioctl(7, 0x8402, 0xbea5bb98)            = 0 // EWDAE_IOCTL_SET_STANDBY
+
+
+ioctl(7, 0x8004840b, 0xbea5bad4)        = 0 // EWDAE_IOCTL_GET_CONTROL
+writev(3, [{"\3", 1}, {"EWdaemon\0", 9}, {"default :  16.6 HZ\0", 19}], 3) = 29
+writev(3, [{"\3", 1}, {"EWdaemon\0", 9}, {"Now Set_Gyro_Sampling_Mode is 2\n"..., 33}], 3) = 43
+ioctl(7, 0x40048410, 0xbea5b904)        = 0 // EWDAE_IOCTL_SET_SAMPLERATE
+ioctl(7, 0x80188412, 0xbea5b8e8)        = 0 // EWDAE_IOCTL_GET_AKM_DATA
+ioctl(7, 0x40048405, 0xbea5bb20)        = 0 // EWDAE_IOCTL_SET_CALIDATA
+ioctl(7, 0x8004840b, 0xbea5bad4)        = 0 // EWDAE_IOCTL_GET_CONTROL
+ioctl(7, 0x80188412, 0xbea5b8e8)        = 0 // EWDAE_IOCTL_GET_AKM_DATA
+ioctl(7, 0x40048405, 0xbea5bb20)        = 0 // EWDAE_IOCTL_SET_CALIDATA
+

@@ -1,0 +1,123 @@
+writev(3, [{"\3", 1}, {"EWdaemon\0", 9}, {"!!! EWDAE_IOCTL_SET_STANDBY OK \n"..., 33}], 3) = 43
+ioctl(7, 0x8004840b, 0xbe884ad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 133191280}) = 0
+writev(3, [{"\3", 1}, {"EWdaemon\0", 9}, {"default :  16.6 HZ\0", 19}], 3) = 29
+writev(3, [{"\3", 1}, {"EWdaemon\0", 9}, {"Now Set_Gyro_Sampling_Mode is 2\n"..., 33}], 3) = 43
+ioctl(7, 0x40048410, 0xbe884904)        = 0
+ioctl(7, 0x80188412, 0xbe8848e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 137912279}) = 0
+ioctl(7, 0x40048405, 0xbe884b20)        = 0
+sigaction(SIGALRM, {0x8f31, [], SA_RESTART}, {SIG_DFL, , 0x400ce105) = 0
+setitimer(ITIMER_REAL, {it_interval={0, 66000}, it_value={0, 66000}}, NULL) = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 143731280}) = 0
+nanosleep({0, 55000000}, 0xbe884908)    = 0
+ioctl(7, 0x8004840b, 0xbe884ad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 201890280}) = 0
+ioctl(7, 0x80188412, 0xbe8848e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 202522280}) = 0
+ioctl(7, 0x40048405, 0xbe884b20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 203507280}) = 0
+nanosleep({0, 64000000}, {0, 60277001}) = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [])
+nanosleep({0, 60277001}, 0xbe884908)    = 0
+ioctl(7, 0x8004840b, 0xbe884ad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 271475280}) = 0
+ioctl(7, 0x80188412, 0xbe8848e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 272097280}) = 0
+ioctl(7, 0x40048405, 0xbe884b20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 272957280}) = 0
+nanosleep({0, 64000000}, {0, 63844000}) = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [])
+nanosleep({0, 63844000}, {0, 515000})   = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [])
+nanosleep({0, 515000}, 0xbe884908)      = 0
+ioctl(7, 0x8004840b, 0xbe884ad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 343531280}) = 0
+ioctl(7, 0x80188412, 0xbe8848e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 344523280}) = 0
+ioctl(7, 0x40048405, 0xbe884b20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 345519280}) = 0
+nanosleep({0, 64000000}, {0, 4438001})  = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [])
+nanosleep({0, 4438001}, 0xbe884908)     = 0
+ioctl(7, 0x8004840b, 0xbe884ad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 411892279}) = 0
+ioctl(7, 0x80188412, 0xbe8848e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 412087279}) = 0
+ioctl(7, 0x40048405, 0xbe884b20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 412275279}) = 0
+nanosleep({0, 65000000}, {0, 4946000})  = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [])
+nanosleep({0, 4946000}, 0xbe884908)     = 0
+ioctl(7, 0x8004840b, 0xbe884ad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 478269279}) = 0
+ioctl(7, 0x80188412, 0xbe8848e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 478422279}) = 0
+ioctl(7, 0x40048405, 0xbe884b20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 478573279}) = 0
+nanosleep({0, 65000000}, {0, 5805000})  = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [])
+nanosleep({0, 5805000}, 0xbe884908)     = 0
+ioctl(7, 0x8004840b, 0xbe884ad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 544973279}) = 0
+ioctl(7, 0x80188412, 0xbe8848e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 545174279}) = 0
+ioctl(7, 0x40048405, 0xbe884b20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 545375279}) = 0
+nanosleep({0, 65000000}, {0, 6626000})  = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [])
+nanosleep({0, 6626000}, 0xbe884908)     = 0
+ioctl(7, 0x8004840b, 0xbe884ad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 612499279}) = 0
+ioctl(7, 0x80188412, 0xbe8848e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 612867279}) = 0
+ioctl(7, 0x40048405, 0xbe884b20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 613571279}) = 0
+nanosleep({0, 64000000}, {0, 7879000})  = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [])
+nanosleep({0, 7879000}, 0xbe884908)     = 0
+ioctl(7, 0x8004840b, 0xbe884ad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 682423279}) = 0
+ioctl(7, 0x80188412, 0xbe8848e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 685446279}) = 0
+ioctl(7, 0x40048405, 0xbe884b20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 687361279}) = 0
+nanosleep({0, 61000000}, {0, 15778000}) = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [])
+nanosleep({0, 15778000}, 0xbe884908)    = 0
+ioctl(7, 0x8004840b, 0xbe884ad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 756850279}) = 0
+ioctl(7, 0x80188412, 0xbe8848e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 758279279}) = 0
+ioctl(7, 0x40048405, 0xbe884b20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 760817279}) = 0
+nanosleep({0, 62000000}, {0, 21444000}) = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [])
+nanosleep({0, 21444000}, 0xbe884908)    = 0
+ioctl(7, 0x8004840b, 0xbe884ad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 827981279}) = 0
+ioctl(7, 0x80188412, 0xbe8848e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 829593279}) = 0
+ioctl(7, 0x40048405, 0xbe884b20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94167, 831238279}) = 0
+nanosleep({0, 62000000}, ^C <unfinished ...>

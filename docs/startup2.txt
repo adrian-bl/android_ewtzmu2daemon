@@ -1,0 +1,234 @@
+root@android:/system/bin # strace ./ewtzmud_                                   
+execve("./ewtzmud_", ["./ewtzmud_"], [/* 20 vars */]) = 0
+mprotect(0x40084000, 74908, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mprotect(0x40084000, 77824, PROT_READ|PROT_EXEC) = 0
+mprotect(0x40097000, 4096, PROT_READ)   = 0
+gettid()                                = 29004
+set_tls(0x400a366c, 0x400a3630, 0x400a3768, 0x40, 0x400a3630) = 0
+getpid()                                = 29004
+sigaction(SIGILL, {0x40089c4d, [], SA_RESTART|SA_SIGINFO}, NULL, 0) = 0
+sigaction(SIGABRT, {0x40089c4d, [], SA_RESTART|SA_SIGINFO}, NULL, 0) = 0
+sigaction(SIGBUS, {0x40089c4d, [], SA_RESTART|SA_SIGINFO}, NULL, 0) = 0
+sigaction(SIGFPE, {0x40089c4d, [], SA_RESTART|SA_SIGINFO}, NULL, 0) = 0
+sigaction(SIGSEGV, {0x40089c4d, [], SA_RESTART|SA_SIGINFO}, NULL, 0) = 0
+sigaction(SIGSTKFLT, {0x40089c4d, [], SA_RESTART|SA_SIGINFO}, NULL, 0) = 0
+sigaction(SIGPIPE, {0x40089c4d, [], SA_RESTART|SA_SIGINFO}, NULL, 0) = 0
+mprotect(0x8000, 44856, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+stat64("/vendor/lib/liblog.so", 0xbea5b770) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/liblog.so", {st_mode=S_IFREG|0644, st_size=13532, ...}) = 0
+open("/system/lib/liblog.so", O_RDONLY) = 3
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(3, -8, SEEK_END)                  = 13524
+read(3, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 20480, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x40073000
+madvise(0x40073000, 20480, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+mmap2(0x40073000, 10589, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0x40073000
+madvise(0x40073000, 10589, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+mprotect(0x40073000, 12288, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0x40076000, 4116, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x2) = 0x40076000
+madvise(0x40076000, 4116, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+close(3)                                = 0
+stat64("/vendor/lib/libc.so", 0xbea5b6d8) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libc.so", {st_mode=S_IFREG|0644, st_size=286500, ...}) = 0
+open("/system/lib/libc.so", O_RDONLY)   = 3
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(3, -8, SEEK_END)                  = 286492
+read(3, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 331776, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x400a5000
+madvise(0x400a5000, 331776, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+mmap2(0x400a5000, 270876, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0x400a5000
+madvise(0x400a5000, 270876, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+mprotect(0x400a5000, 274432, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0x400e8000, 10248, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x43) = 0x400e8000
+madvise(0x400e8000, 10248, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+mmap2(0x400eb000, 44955, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x400eb000
+madvise(0x400eb000, 44955, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+close(3)                                = 0
+mprotect(0x400a5000, 274432, PROT_READ|PROT_EXEC) = 0
+stat64("/vendor/lib/libstdc++.so", 0xbea5b6d8) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libstdc++.so", {st_mode=S_IFREG|0644, st_size=5332, ...}) = 0
+open("/system/lib/libstdc++.so", O_RDONLY) = 3
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(3, -8, SEEK_END)                  = 5324
+read(3, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 12288, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x400f9000
+madvise(0x400f9000, 12288, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+mmap2(0x400f9000, 2668, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0x400f9000
+madvise(0x400f9000, 2668, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+mprotect(0x400f9000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0x400fa000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0x400fa000
+madvise(0x400fa000, 4096, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+mmap2(0x400fb000, 16, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x400fb000
+madvise(0x400fb000, 16, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+close(3)                                = 0
+mprotect(0x400f9000, 4096, PROT_READ|PROT_EXEC) = 0
+mprotect(0x400fa000, 4096, PROT_READ)   = 0
+stat64("/vendor/lib/libm.so", 0xbea5b6d8) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libm.so", {st_mode=S_IFREG|0644, st_size=87192, ...}) = 0
+open("/system/lib/libm.so", O_RDONLY)   = 3
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(3, -8, SEEK_END)                  = 87184
+read(3, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 94208, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x400fc000
+madvise(0x400fc000, 94208, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+mmap2(0x400fc000, 83308, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0x400fc000
+madvise(0x400fc000, 83308, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+mprotect(0x400fc000, 86016, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0x40111000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x14) = 0x40111000
+madvise(0x40111000, 4096, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+mmap2(0x40112000, 32, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x40112000
+madvise(0x40112000, 32, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+close(3)                                = 0
+mprotect(0x400fc000, 86016, PROT_READ|PROT_EXEC) = 0
+mprotect(0x40111000, 4096, PROT_READ)   = 0
+mprotect(0x40073000, 12288, PROT_READ|PROT_EXEC) = 0
+mprotect(0x40076000, 4096, PROT_READ)   = 0
+stat64("/vendor/lib/libcutils.so", 0xbea5b770) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libcutils.so", {st_mode=S_IFREG|0644, st_size=63252, ...}) = 0
+open("/system/lib/libcutils.so", O_RDONLY) = 3
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(3, -8, SEEK_END)                  = 63244
+read(3, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 126976, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x40008000
+madvise(0x40008000, 126976, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+mmap2(0x40008000, 58240, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0x40008000
+madvise(0x40008000, 58240, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+mprotect(0x40008000, 61440, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0x40017000, 4620, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0xe) = 0x40017000
+madvise(0x40017000, 4620, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+mmap2(0x40019000, 57096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x40019000
+madvise(0x40019000, 57096, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+close(3)                                = 0
+mprotect(0x40008000, 61440, PROT_READ|PROT_EXEC) = 0
+mprotect(0x40017000, 4096, PROT_READ)   = 0
+mprotect(0x8000, 45056, PROT_READ|PROT_EXEC) = 0
+mmap2(NULL, 49152, PROT_READ, MAP_SHARED, 9, 0) = 0x40113000
+futex(0x400ee6d4, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+clock_gettime(CLOCK_MONOTONIC, {94287, 835960279}) = 0
+open("/dev/urandom", O_RDONLY)          = 3
+read(3, "\33\6kþ", 4)                   = 4
+close(3)                                = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x40027000
+madvise(0x40027000, 4096, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+mprotect(0x40027000, 4096, PROT_READ)   = 0
+open("/dev/log/main", O_WRONLY)         = 3
+open("/dev/log/radio", O_WRONLY)        = 4
+open("/dev/log/events", O_WRONLY)       = 5
+open("/dev/log/system", O_WRONLY)       = 6
+writev(3, [{"\3", 1}, {"EWdaemon\0", 9}, {"Panasonic Sensor Fusion (daemon)"..., 51}], 3) = 61
+writev(3, [{"\3", 1}, {"EWdaemon\0", 9}, {"Copyright (c) 2011 all rights pr"..., 69}], 3) = 79
+writev(3, [{"\3", 1}, {"EWdaemon\0", 9}, {"Now algorithm version : 120307 \n"..., 33}], 3) = 43
+open("/dev/ewtzmu2", O_RDWR)            = 7
+ioctl(7, 0x80048316, 0xbea5b808)        = 0
+close(7)                                = 0
+writev(3, [{"\3", 1}, {"EWdaemon\0", 9}, {"dir_polar.acc = 6, 7   \n\0", 25}], 3) = 35
+writev(3, [{"\3", 1}, {"EWdaemon\0", 9}, {"dir_polar. mag= 6, 7   \n\0", 25}], 3) = 35
+writev(3, [{"\3", 1}, {"EWdaemon\0", 9}, {"dir_polar. gyro= 6, 2   \n\0", 26}], 3) = 36
+writev(3, [{"\3", 1}, {"EWdaemon\0", 9}, {"Sensor fusion libary start!\0", 28}], 3) = 38
+open("/dev/ewtzmu2daemon", O_RDWR)      = 7
+clock_gettime(CLOCK_MONOTONIC, {94287, 852927279}) = 0
+writev(3, [{"\3", 1}, {"EWdaemon\0", 9}, {"StartSignal\0", 12}], 3) = 22
+sigaction(SIGINT, {0x8ed1, [], SA_RESTART}, {SIG_DFL, , 0x400ce105) = 0
+sigaction(SIGHUP, {0x8ed1, [], SA_RESTART}, {SIG_DFL, , 0x41de0b8c) = 0
+sigaction(SIGKILL, {0x8ed1, [], SA_RESTART}, {0x8ed1, [], SA_RESTART}, 0x10000000) = -1 EINVAL (Invalid argument)
+sigaction(SIGTERM, {0x8ed1, [], SA_RESTART}, {SIG_DFL, , 0x400ce105) = 0
+ioctl(7, 0x8004840b, 0xbea5baac)        = 0
+ioctl(7, 0x4004840a, 0xbea5baac)        = 0
+ioctl(7, 0x8004840b, 0xbea5bad4)        = 0
+nanosleep({0, 500000000}, 
+
+0xbea5b910)   = 0
+ioctl(7, 0x8402
+
+
+, 0xbea5bb98)            = 0
+writev(3, [{"\3", 1}, {"EWdaemon\0", 9}, {"!!! EWDAE_IOCTL_SET_STANDBY OK \n"..., 33}], 3) = 43
+ioctl(7, 0x8004840b, 0xbea5bad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 196501279}) = 0
+writev(3, [{"\3", 1}, {"EWdaemon\0", 9}, {"default :  16.6 HZ\0", 19}], 3) = 29
+writev(3, [{"\3", 1}, {"EWdaemon\0", 9}, {"Now Set_Gyro_Sampling_Mode is 2\n"..., 33}], 3) = 43
+ioctl(7, 0x40048410, 0xbea5b904)        = 0
+ioctl(7, 0x80188412, 0xbea5b8e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 197562279}) = 0
+ioctl(7, 0x40048405, 0xbea5bb20)        = 0
+sigaction(SIGALRM, {0x8f31, [], SA_RESTART}, {SIG_DFL, , 0x400ce105) = 0
+setitimer(ITIMER_REAL, {it_interval={0, 66000}, it_value={0, 66000}}, NULL) = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 199068278}) = 0
+nanosleep({0, 63000000}, 0xbea5b908)    = 0
+ioctl(7, 0x8004840b, 0xbea5bad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 262831279}) = 0
+ioctl(7, 0x80188412, 0xbea5b8e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 263041279}) = 0
+ioctl(7, 0x40048405, 0xbea5bb20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 263230279}) = 0
+nanosleep({0, 65000000}, {0, 64244000}) = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [])
+nanosleep({0, 64244000}, 0xbea5b908)    = 0
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [])
+ioctl(7, 0x8004840b, 0xbea5bad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 331870279}) = 0
+ioctl(7, 0x80188412, 0xbea5b8e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 332067279}) = 0
+ioctl(7, 0x40048405, 0xbea5bb20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 332257279}) = 0
+nanosleep({0, 65000000}, {0, 1432000})  = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [])
+nanosleep({0, 1432000}, 0xbea5b908)     = 0
+ioctl(7, 0x8004840b, 0xbea5bad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 399576279}) = 0
+ioctl(7, 0x80188412, 0xbea5b8e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 399786279}) = 0
+ioctl(7, 0x40048405, 0xbea5bb20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 399991279}) = 0
+nanosleep({0, 65000000}, {0, 3438000})  = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [])
+nanosleep({0, 3438000}, 0xbea5b908)     = 0
+ioctl(7, 0x8004840b, 0xbea5bad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 471863279}) = 0
+ioctl(7, 0x80188412, 0xbea5b8e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 473305279}) = 0
+ioctl(7, 0x40048405, 0xbea5bb20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 475412279}) = 0
+nanosleep({0, 62000000}, {0, 11335000}) = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [])
+nanosleep({0, 11335000}, 0xbea5b908)    = 0
+ioctl(7, 0x8004840b, 0xbea5bad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 544240279}) = 0
+ioctl(7, 0x80188412, 0xbea5b8e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 546572279}) = 0
+ioctl(7, 0x40048405, 0xbea5bb20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 547608279}) = 0
+nanosleep({0, 62000000}, {0, 17248000}) = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [])
+nanosleep({0, 17248000}, 0xbea5b908)    = 0
+ioctl(7, 0x8004840b, 0xbea5bad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 616030279}) = 0
+ioctl(7, 0x80188412, 0xbea5b8e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 617638279}) = 0
+ioctl(7, 0x40048405, 0xbea5bb20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 619167279}) = 0
+nanosleep({0, 62000000}, {0, 23103000}) = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [])
+nanosleep({0, 23103000}, 0xbea5b908)    = 0
+ioctl(7, 0x8004840b, 0xbea5bad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94290, 687912279}) = 0
+ioctl(7, 0x80188412, 0xbea5b8e8)        = 0

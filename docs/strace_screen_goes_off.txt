@@ -1,0 +1,75 @@
+ioctl(7, 0x8004840b, 0xbea5bad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94292, 949638279}) = 0
+ioctl(7, 0x80188412, 0xbea5b8e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94292, 950548279}) = 0
+ioctl(7, 0x40048405, 0xbea5bb20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94292, 951930279}) = 0
+nanosleep({0, 63000000}, {0, 42340000}) = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [QUIT TRAP ABRT FPE KILL USR2 PIPE TERM CHLD])
+nanosleep({0, 42340000}, 0xbea5b908)    = 0
+ioctl(7, 0x8004840b, 0xbea5bad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94293, 23250279}) = 0
+ioctl(7, 0x80188412, 0xbea5b8e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94293, 29177279}) = 0
+ioctl(7, 0x40048405, 0xbea5bb20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94293, 35348279}) = 0
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0x8000000)             = 0
+sigreturn()                             = ? (mask now ~[HUP INT])
+nanosleep({0, 53000000}, 0xbea5b908)    = 0
+ioctl(7, 0x8004840b, 0xbea5bad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94293, 102755279}) = 0
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0x7)                   = 0
+sigreturn()                             = ? (mask now ~[HUP INT])
+ioctl(7, 0x80188412, 0xbea5b8e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94293, 119359279}) = 0
+ioctl(7, 0x40048405, 0xbea5bb20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94293, 122807279}) = 0
+nanosleep({0, 45000000}, {0, 1510000})  = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [HUP INT QUIT])
+nanosleep({0, 1510000}, 0xbea5b908)     = 0
+ioctl(7, 0x8004840b, 0xbea5bad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94293, 197073279}) = 0
+ioctl(7, 0x80188412, 0xbea5b8e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94293, 201470279}) = 0
+ioctl(7, 0x40048405, 0xbea5bb20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94293, 204359279}) = 0
+nanosleep({0, 58000000}, {0, 30127000}) = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [HUP INT QUIT])
+nanosleep({0, 30127000}, 0xbea5b908)    = 0
+ioctl(7, 0x8004840b, 0xbea5bad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94293, 273453279}) = 0
+ioctl(7, 0x80188412, 0xbea5b8e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94293, 282030279}) = 0
+ioctl(7, 0x40048405, 0xbea5bb20)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94293, 287389279}) = 0
+nanosleep({0, 52000000}, {0, 44878000}) = ? ERESTART_RESTARTBLOCK (To be restarted)
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xf423f)               = 0
+sigreturn()                             = ? (mask now [HUP INT QUIT])
+nanosleep({0, 44878000}, 0xbea5b908)    = 0
+ioctl(7, 0x8004840b, 0xbea5bad4)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94293, 359914279}) = 0
+ioctl(7, 0x80188412, 0xbea5b8e8)        = 0
+clock_gettime(CLOCK_MONOTONIC, {94293, 363238279}) = 0
+ioctl(7, 0x40048405, 0xbea5bb20)        = 0
+--- {si_signo=SIGALRM, si_code=SI_KERNEL, si_value={int=1, ptr=0x1}} (Alarm clock) ---
+ioctl(7, 0x840d, 0xbea5bb20)            = 0
+sigreturn()                             = ? (mask now [HUP INT QUIT])
+clock_gettime(CLOCK_MONOTONIC, {94293, 374546279}) = 0
+nanosleep({0, 51000000}, 0xbea5b908)    = 0
+ioctl(7, 0x8004840b, 0xbea5bad4)        = 0
+setitimer(ITIMER_REAL, {it_interval={0, 0}, it_value={0, 0}}, NULL) = 0
+nanosleep({0, 500000000}, 0xbea5b910)   = 0
+ioctl(7, 0x8402
+
+
+
+^C <unfinished ...>
